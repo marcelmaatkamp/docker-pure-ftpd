@@ -43,4 +43,5 @@ RUN useradd -g ftpgroup -d /dev/null -s /etc ftpuser
 CMD /usr/sbin/pure-ftpd -c 30 -C 1 -l puredb:/etc/pure-ftpd/pureftpd.pdb -x -E -j -R &\
 	/bin/bash
 
+# RUN pure-pw useradd  -u ftpuser -d /share -m
 EXPOSE 21/tcp
